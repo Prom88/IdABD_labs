@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
-import matplotlib.pyplot as plt
+
 
 
 train_data = pd.read_csv("з12/Task_data.csv", delimiter=',')
