@@ -33,7 +33,7 @@ def predictSpam(message):
 
     msg_vector = msg_vector.reshape(1, -1)
     print(msg_vector)
-    prediction = model.predict(msg_vector)
+    prediction = model.predict(msg_vector)[0]
     probabilities = model.predict_proba(msg_vector)[0]
     
     if prediction == 1:
